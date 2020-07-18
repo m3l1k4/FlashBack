@@ -31,13 +31,14 @@ class ArrowKeys extends Component {
 
                 <div className="ArrowKeys" ref={el => (this.div = el)}>
 
-                    <div class="stage"></div>
+                    
                     <div id="controls">
                         <img id="left" src="../assets/arrows/staticLeft.png"></img>
                         <img id="up" src="../assets/arrows/staticUp.png"></img>
                         <img id="down" src="../assets/arrows/staticDown.png"></img>
                         <img id="right" src="../assets/arrows/staticRight.png"></img>
                     </div>
+                    <div class="stage"></div>
 
                 </div>
             </div>
