@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {Route, Switch, BrowserRouter as Router} from 'react-router-dom';
 import ArrowKeysReact from 'arrow-keys-react';
+import ArrowKeys from './components/ArrowKeys'
+import jsRev from './components/ArrowKeys/jsRev'
+
+
  
-class App extends Component {
+class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -36,9 +41,14 @@ class App extends Component {
   
   render() {
     return (
-      <div {...ArrowKeysReact.events} tabIndex="1">
+
+      <Route exact path="/">
+         {/* <div {...ArrowKeysReact.events} tabIndex="1">
         {this.state.content}
-      </div>
+      </div> */}
+      <ArrowKeys/>
+      </Route>
+     
     );
   }
 }
