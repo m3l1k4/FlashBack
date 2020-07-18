@@ -1,0 +1,11 @@
+.stage {
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  text-align: center;
+}
+
+#controls {
+  padding-left: 100px;
+}
+/*# sourceMappingURL=ArrowKeys.css.map */
