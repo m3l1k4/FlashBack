@@ -20,16 +20,16 @@ function Arrow(direction) {
 
 	switch(direction) {
 
-		case "left" : xPos = "115px";
+		case "left" : xPos = "110px";
 		break;
 
-		case "up" : xPos = "182px";
+		case "up" : xPos = "180px";
 		break;
 
-		case "down" : xPos = "252px";
+		case "down" : xPos = "250px";
 		break;
 
-		case "right" : xPos = "322px";
+		case "right" : xPos = "320px";
 		break;
 
 	}
@@ -39,7 +39,7 @@ function Arrow(direction) {
 	this.image.css({
 
 		position: "absolute",
-		top: "0px",
+		bottom: "100px",
 		left: xPos
 
 	});
@@ -52,7 +52,7 @@ function Arrow(direction) {
 Arrow.prototype.step = function() {
 
 	// Controls the speed of the arrows
-	this.image.css("top", "+=4px");
+	this.image.css("top", "-=4px");
 
 };
 
@@ -125,13 +125,13 @@ function render() {
 
 	}
 
-	// Animate arrows showering down //
+	// // Animate arrows showering down //
+	// for (var i = 0; i < notes.length ; i++) {
 	for (var i = notes.length - 1; i >= 0; i--) {
-
-		notes[i].step();
+		  notes[i].step();
 
 		// Check for cleanup
-		if (notes[i].image.position().top > 615) {
+		if (notes[i].image.position().top < 50) {
 
 			notes[i].destroy();
 
