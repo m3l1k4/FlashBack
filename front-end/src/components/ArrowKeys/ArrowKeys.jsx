@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import './ArrowKeys.scss'
-import $ from 'jquery';
-var notes = [];
+
 
 
 class ArrowKeys extends Component {
@@ -24,6 +23,7 @@ class ArrowKeys extends Component {
 
     render() {
 
+   
         return (
 
 
@@ -40,6 +40,7 @@ class ArrowKeys extends Component {
                     </div>
                     <div class="stage"></div>
 
+<h1>score</h1>
                 </div>
             </div>
         );

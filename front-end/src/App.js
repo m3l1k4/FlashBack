@@ -3,7 +3,7 @@ import {Route, Switch, BrowserRouter as Router} from 'react-router-dom';
 import ArrowKeysReact from 'arrow-keys-react';
 import ArrowKeys from './components/ArrowKeys'
 import jsRev from './components/ArrowKeys/jsRev'
-
+import Score from './components/Score'
 
  
 class App extends React.Component {
@@ -47,6 +47,7 @@ class App extends React.Component {
         {this.state.content}
       </div> */}
       <ArrowKeys/>
+      <Score/>
       </Route>
      
     );
