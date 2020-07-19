@@ -56,7 +56,7 @@ class App extends React.Component {
      {/* <h1>score:{score}</h1> */}
 
    </div> 
-   <Score/>
+   {/* <Score/> */}
       <ArrowKeys />
      
       </Route>

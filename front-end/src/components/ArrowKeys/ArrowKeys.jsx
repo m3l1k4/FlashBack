@@ -31,16 +31,20 @@ class ArrowKeys extends Component {
 
                 <div className="ArrowKeys" ref={el => (this.div = el)}>
 
-                    <div className="board"></div>
+                    <div>
                     <div id="controls">
-                        <img id="left" src="../assets/arrows/staticLeft.png"></img>
-                        <img id="up" src="../assets/arrows/staticUp.png"></img>
-                        <img id="down" src="../assets/arrows/staticDown.png"></img>
-                        <img id="right" src="../assets/arrows/staticRight.png"></img>
+                        <img id="left" src="../assets/arrows/staticLeft.gif" width="66px" height="66px"></img>
+                        <img id="up" src="../assets/arrows/staticUp.gif" width="66px" height="66px"></img>
+                        <img id="down" src="../assets/arrows/staticDown.gif" width="66px" height="66px"></img>
+                        <img id="right" src="../assets/arrows/staticRight.gif" width="66px" height="66px"></img>
                     </div>
                     <div className="stage"></div>
+                    </div>
+                    <div>
 
-                
+                    <h1>Score</h1>
+                    <div className="board"></div>
+                </div>
                 </div>
             </div>
         );
