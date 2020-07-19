@@ -6,7 +6,7 @@ import jsRev from './components/ArrowKeys/jsRev'
 import Score from './components/Score'
  
 import HomeMenu from './components/HomeMenu'
- 
+ import GamesPage from './components/GamesPage'
 class App extends React.Component {
 
 
@@ -55,6 +55,11 @@ class App extends React.Component {
 </Route>
 <Route path="/DDR">
   <ArrowKeys />
+</Route>
+
+
+<Route path="/games">
+  <GamesPage />
 </Route>
 
 </Switch>
