@@ -5,6 +5,7 @@ import ArrowKeys from './components/ArrowKeys'
 import jsRev from './components/ArrowKeys/jsRev'
 import Score from './components/Score'
  
+import HomeMenu from './components/HomeMenu'
  
 class App extends React.Component {
 
@@ -48,18 +49,16 @@ class App extends React.Component {
   render() {
     return (
 
-      <Route >
-         {/* <div {...ArrowKeysReact.events} tabIndex="1">
-        {this.state.content}
-      </div> */}
-   <div>
-     {/* <h1>score:{score}</h1> */}
+<Switch>
+<Route exact path="/">
+  <HomeMenu/>
+</Route>
+<Route path="/DDR">
+  <ArrowKeys />
+</Route>
 
-   </div> 
-   {/* <Score/> */}
-      <ArrowKeys  path="/DDR" />
-     
-      </Route>
+</Switch>
+
      
     );
   }
