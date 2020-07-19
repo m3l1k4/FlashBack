@@ -26,15 +26,15 @@
         width: 100%;
         height: auto;
         display: flex;
-        // align-items: center;
+        align-items: center;
 
         justify-content: center;
         &--icon {
       
-           cursor: pointer;
+        //    cursor: pointer;
             width: 20vw;
             height: 20vw;
-            margin: 10vw 1vw;
+            margin: 1vw;
             animation: flash 2s linear infinite; 
 
 

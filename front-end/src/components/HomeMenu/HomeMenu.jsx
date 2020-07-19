@@ -9,12 +9,12 @@ export default function HomeMenu() {
         <div className="HomeMenu">
 
             <div className="HomeMenu__sidebar">
-            <img className="HomeMenu__sidebar--logo" src="../assets/logo.png" ></img>
+            <a href="/">   <img className="HomeMenu__sidebar--logo" src="../assets/logo.png" ></img></a>
             </div>
 
             <div className="HomeMenu__maindiv">
-            <img className="HomeMenu__maindiv--icon iconB" src="../assets/icons/ABOUT.svg" ></img>
-            <img className="HomeMenu__maindiv--icon iconA" src="../assets/icons/GAMES.svg" ></img>
+            <a href="/about"><img className="HomeMenu__maindiv--icon iconB" src="../assets/icons/ABOUT.svg" ></img></a>
+            <a href="/games"> <img className="HomeMenu__maindiv--icon iconA" src="../assets/icons/GAMES.svg" ></img></a>
             </div>
         </div>
 
