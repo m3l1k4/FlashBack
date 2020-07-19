@@ -42,6 +42,15 @@
   margin: 1vw;
   -webkit-animation: flash 2s linear infinite;
           animation: flash 2s linear infinite;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.HomeMenu__maindiv--icon:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .iconA {

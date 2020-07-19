@@ -36,8 +36,15 @@
             height: 20vw;
             margin: 1vw;
             animation: flash 2s linear infinite; 
+            transition: transform .2s;
+
+        }
 
 
+        &--icon:hover{
+        
+               
+                transform: scale(1.25); 
         }
     }
 }
