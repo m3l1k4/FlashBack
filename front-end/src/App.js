@@ -4,9 +4,13 @@ import ArrowKeysReact from 'arrow-keys-react';
 import ArrowKeys from './components/ArrowKeys'
 import jsRev from './components/ArrowKeys/jsRev'
 import Score from './components/Score'
-
+ 
  
 class App extends React.Component {
+
+
+
+
   constructor(props){
     super(props);
     this.state = {
@@ -38,6 +42,8 @@ class App extends React.Component {
   }
 
 
+
+
   
   render() {
     return (
@@ -46,8 +52,13 @@ class App extends React.Component {
          {/* <div {...ArrowKeysReact.events} tabIndex="1">
         {this.state.content}
       </div> */}
-      <ArrowKeys/>
-      <Score/>
+   <div>
+     {/* <h1>score:{score}</h1> */}
+
+   </div> 
+   <Score/>
+      <ArrowKeys />
+     
       </Route>
      
     );

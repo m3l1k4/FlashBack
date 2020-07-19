@@ -3,8 +3,8 @@
 import $ from 'jquery';
 // 'notes' to store Arrows  
 var notes = [];
-var score = 0;
 
+var score =0;
 // ==== CLASS FOR ARROWS ==== //
 
 // 1. Direction of arrows
@@ -13,6 +13,15 @@ var score = 0;
 // 4. Explode when arrow gets to the bottom
 
 // Class Arrow
+
+
+	 
+let state = {
+	scoreKeep: []
+}
+
+
+
 function Arrow(direction) {
 
 	// CSS spacings for the arrows //
@@ -36,6 +45,8 @@ function Arrow(direction) {
 
 	this.direction = direction;
 	this.image = $("<img src='../assets/arrows/" + direction + ".gif'/>");
+
+
 	this.image.css({
 
 		position: "absolute",
@@ -43,9 +54,16 @@ function Arrow(direction) {
 		left: xPos
 
 	});
+	this.score = score;
+	// this.score.css ({
+	// 	position: "absolute",
+	// 	top: "100px"
+	// })
 
+	 
 	$('.stage').append(this.image);
-
+	$('.board').text(this.score);
+	
 }// ends CLASS Arrow
 
 // To enable animating the arrows
@@ -106,6 +124,8 @@ function randomGen() {
 	if (randNum === 3) {
 
 		notes.push(new Arrow("up"));
+	
+
 		
 	}
 	if (randNum === 4) {
@@ -191,11 +211,10 @@ $(document).keydown( function(event) {
 
 		if (event.keyCode == 37 && notes[i].direction == "left") {
 
-			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 110) {
+			if (notes[i].image.position().top > 1 && notes[i].image.position().top < 120) {
 
 				console.log("LEFT! "+notes[i].explode());
-				score++;
-				console.log(score)
+	
 
 			}else{
 				alert("missted")
@@ -204,43 +223,41 @@ $(document).keydown( function(event) {
 		}
 		if (event.keyCode == 38 && notes[i].direction == "up") {
 
-			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 110) {
+			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 120) {
 				
 				console.log("UP! "+notes[i].explode());
-				score++;
-				console.log(score)
+			
 			}
+score ++; console.log(score)
 
 		}
 		if (event.keyCode == 40 && notes[i].direction == "down") {
 
-			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 110) {
+			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 120) {
 				
 				console.log("DOWN! "+notes[i].explode());
-				score++;
-				console.log(score)
+			
 			}
+
+			
 
 		}
 		if (event.keyCode == 39 && notes[i].direction == "right") {
 
-			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 110) {
+			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 120) {
 				
 				console.log("RIGHT! "+notes[i].explode());
 			
 			}
 
-			score++;
-				console.log(score)
+		
 		}
 
 	}// ends loop
 
 });// ends $(doc).keyup
 
+export {state}
 
 
 
-
-
-export {score}
