@@ -122,7 +122,7 @@ function randomGen() {
 // Render function //
 function render() {
 
-	if (frame++ % arrowSpawnRate === 0) {
+	if ((frame=frame+1) % arrowSpawnRate === 0) {
 
 		randomGen();
 

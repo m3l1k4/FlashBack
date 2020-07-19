@@ -48,7 +48,7 @@ class App extends React.Component {
   render() {
     return (
 
-      <Route exact path="/">
+      <Route >
          {/* <div {...ArrowKeysReact.events} tabIndex="1">
         {this.state.content}
       </div> */}
@@ -57,7 +57,7 @@ class App extends React.Component {
 
    </div> 
    {/* <Score/> */}
-      <ArrowKeys />
+      <ArrowKeys  path="/DDR" />
      
       </Route>
      
