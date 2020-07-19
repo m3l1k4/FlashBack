@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="163px" height="145px" viewBox="0 0 163 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M81.5,2.41837634 L160.423104,56.0707658 L130.332998,142.72136 L32.6670017,142.72136 L2.57689632,56.0707658 L81.5,2.41837634 Z" id="Polygon" stroke="#B86BEE" stroke-width="4" fill="#000000"></path>
+        <text id="HOME" font-family="MarkerFelt-Wide, Marker Felt" font-size="30" font-weight="bold" fill="#666993">
+            <tspan x="41" y="90">HOME</tspan>
+        </text>
+    </g>
+</svg>
