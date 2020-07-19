@@ -13,8 +13,8 @@ export default function HomeMenu() {
             </div>
 
             <div className="HomeMenu__maindiv">
-            <img className="HomeMenu__maindiv--icon" src="../assets/icons/ABOUT.svg" ></img>
-            <img className="HomeMenu__maindiv--icon" src="../assets/icons/GAMES.svg" ></img>
+            <img className="HomeMenu__maindiv--icon iconB" src="../assets/icons/ABOUT.svg" ></img>
+            <img className="HomeMenu__maindiv--icon iconA" src="../assets/icons/GAMES.svg" ></img>
             </div>
         </div>
 
