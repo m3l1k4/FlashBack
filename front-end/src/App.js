@@ -7,7 +7,10 @@ import Score from './components/Score'
  
 import HomeMenu from './components/HomeMenu'
  import GamesPage from './components/GamesPage'
-class App extends React.Component {
+
+import PianoPlayer from './components/PianoPlayer'
+
+ class App extends React.Component {
 
 
 
@@ -60,6 +63,11 @@ class App extends React.Component {
 
 <Route path="/games">
   <GamesPage />
+</Route>
+
+
+<Route path="/piano">
+  <PianoPlayer />
 </Route>
 
 </Switch>
