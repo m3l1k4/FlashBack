@@ -7,29 +7,7 @@
 
     background-position: center;
 
-    &__sidebar {
-        width: 23vw;
-        min-height: 600px;
-        display: flex;
-        flex-direction: column;
 
-        &--logo {
-            width: 20vw;
-            margin: 2rem;
-            animation: text-flicker 15s  infinite;
-        }
-
-        &--options {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            &__icon {
-                margin: 1rem;
-            }
-        }
-    }
 
     &__main {
         width: 100%;

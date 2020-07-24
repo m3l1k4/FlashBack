@@ -1,0 +1,14 @@
+
+.App{
+    display: flex;
+    
+    &__inner{    
+        display: flex;
+        color: green;
+            width: 100%;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        
+    }
+}

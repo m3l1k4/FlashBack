@@ -118,7 +118,7 @@ class PianoPlayer extends React.Component {
                 recording={this.state.recording}
                 setRecording={this.setRecording}
                 noteRange={noteRange}
-                width={900}
+                width={500}
                 playNote={playNote}
                 stopNote={stopNote}
                 disabled={isLoading}
