@@ -118,7 +118,7 @@ class PianoPlayer extends React.Component {
                 recording={this.state.recording}
                 setRecording={this.setRecording}
                 noteRange={noteRange}
-                width={700}
+                width={900}
                 playNote={playNote}
                 stopNote={stopNote}
                 disabled={isLoading}
@@ -127,10 +127,10 @@ class PianoPlayer extends React.Component {
             )}
           />
         </div>
-        <div className="mt-5">
-          <button  className="mt-5__button" onClick={this.onClickPlay}>Play</button>
-          <button className="mt-5__button" onClick={this.onClickStop}>Stop</button>
-          <button className="mt-5__button" onClick={this.onClickClear}>Clear</button>
+        <div className="mt-5--controls">
+          <button  className="mt-5--controls__button" onClick={this.onClickPlay}>PLAY</button>
+          <button className="mt-5--controls__button" onClick={this.onClickStop}>STOP</button>
+          <button className="mt-5--controls__button" onClick={this.onClickClear}>CLEAR</button>
         </div>
         <div className="mt-5">
           <strong>Recorded notes</strong>

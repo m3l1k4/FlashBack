@@ -4,6 +4,28 @@
  display: flex;
  align-self: center;
  justify-content: center;
+
+&--controls{
+    display: flex;
+    justify-content: center;
+
+    &__button{
+        cursor: pointer;
+        background-color: black;
+        color: #d17f01;
+       
+        border-radius: 4px;
+        
+        border: 3px solid  #f900f9;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 12px 0;
+     
+
+        width: 160px;
+        margin: 30px;
+    }
+}
 }
 
 
@@ -25,9 +47,10 @@
    * Styles of accidental notes (flat or sharp)
    */
   .ReactPiano__Key--accidental {
-    background: #555;
-    border: 1px solid #fff;
+    background: #0295fa;
+    border: 1px solid #1543ca;
     border-top: 1px solid transparent;
+    box-shadow: inset 0 0 6px 12px rgba(21, 67, 202, 0.5);
     border-radius: 0 0 4px 4px;
     cursor: pointer;
     height: 66%;
@@ -42,8 +65,8 @@
    * Styles of natural notes (white keys)
    */
   .ReactPiano__Key--natural {
-    background: #f6f5f3;
-    border: 1px solid #888;
+    background: #010103;
+    border: 4px solid #1543ca;
     border-radius: 0 0 6px 6px;
     cursor: pointer;
     z-index: 0;
@@ -64,18 +87,19 @@
    * Styles of "active" or pressed-down keys
    */
   .ReactPiano__Key--active {
-    background: #3ac8da;
+    background:black;
   }
   
   .ReactPiano__Key--active.ReactPiano__Key--accidental {
-    border: 1px solid #fff;
+    border: 4px solid #d17f01;
     border-top: 1px solid #3ac8da;
     /* Slight height reduction for "pushed-down" effect */
     height: 65%;
+    box-shadow: none;
   }
   
   .ReactPiano__Key--active.ReactPiano__Key--natural {
-    border: 1px solid #3ac8da;
+    border: 4px solid #d3257b;
     /* Slight height reduction for "pushed-down" effect */
     height: 98%;
   }
@@ -103,7 +127,8 @@
   }
   
   .ReactPiano__NoteLabel {
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
     text-transform: capitalize;
     /* Disable text selection */
@@ -114,16 +139,16 @@
   }
   
   .ReactPiano__NoteLabel--accidental {
-    color: #f8e8d5;
+    color: #deb8bf;
     margin-bottom: 3px;
   }
   
   .ReactPiano__NoteLabel--natural {
-    color: #888;
+    color: #deb8bf;
     margin-bottom: 3px;
   }
   
   .ReactPiano__NoteLabel--natural.ReactPiano__NoteLabel--active {
-    color: #f8e8d5;
+    color: #8256ab;
   }
   
