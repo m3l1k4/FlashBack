@@ -40,9 +40,13 @@ class ArrowKeys extends Component {
                     </div>
                     <div className="stage"></div>
                     </div>
-                    <div>
+                    <div div className="score">
 
-                    <h1>Score</h1>
+                    <h1 className="score--text">S</h1>
+                    <h1 className="score--text">C</h1>
+                    <h1 className="score--text">O</h1>
+                    <h1 className="score--text">R</h1>
+                    <h1 className="score--text">E</h1>
                     <div className="board"></div>
                 </div>
                 </div>
