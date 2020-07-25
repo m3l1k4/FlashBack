@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EAEV,UAAU,EAAE,KAAK;EACjB,SAAS,EAAE,KAAK;CAWhB;;AALC,AAAD,mBAAS,CAAA;EACR,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,KAAK;EACV,IAAI,EAAE,KAAK;CACX",
+    "sources": [
+        "SoundCloud.scss"
+    ],
+    "names": [],
+    "file": "SoundCloud.css"
+}

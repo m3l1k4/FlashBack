@@ -49,23 +49,24 @@ class ArrowKeys extends Component {
                     </div>
                     <div div className="score">
 
-                        <h1 className="score--text">S</h1>
-                        <h1 className="score--text">C</h1>
+                        <h1 className="score--text">Score</h1>
+                        {/* <h1 className="score--text">C</h1>
                         <h1 className="score--text">O</h1>
                         <h1 className="score--text">R</h1>
-                        <h1 className="score--text">E</h1>
+                        <h1 className="score--text">E</h1> */}
                         <div className="board"></div>
                
                     </div>
 
-                    <div className="soundCloud">
-                            <iframe width="100%" height="100" scrolling="no"
+                    {/* <div className="soundCloud">
+   
+                            <iframe className="soundCloud__iframe"width="200" height="100" scrolling="no"
                                 frameborder="no" allow="autoplay"
                                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1098848317&color=%239b3ee3&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
                                     
                                 </iframe>
-                         
-                        </div>
+                                <img  className="soundCloud__img"src="../assets/juke-box-neon.png" ></img>
+                        </div> */}
                 </div>
             </div>
         );

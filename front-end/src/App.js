@@ -14,6 +14,8 @@ import PianoPlayer from './components/PianoPlayer'
 
 import SideBar from './components/SideBar'
 
+import SoundCloud from './components/SoundCloud'
+
 class App extends React.Component {
 
 
@@ -69,6 +71,7 @@ class App extends React.Component {
         </Route>
         <Route path="/DDR">
           <ArrowKeys />
+          <SoundCloud/>
         </Route>
 
 
