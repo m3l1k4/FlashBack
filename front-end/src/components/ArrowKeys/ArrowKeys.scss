@@ -16,13 +16,15 @@
 }
 
 .board{
-	height: 60px;
-	width: 200px;
+	height: 30px;
+	width: 100px;
 	background-color: black;
 	border: 4px solid #c24cf6;
 	font-size: 48px;
 	margin-left: 1rem;
 	color:white;
+	font-size: 16px;
+
 }
 
 .score{
@@ -33,6 +35,7 @@ text-align: center;
 	justify-content: center;
 	&--text{
 		color:white;
+		font-size: 16px;
 	}
 }
 
