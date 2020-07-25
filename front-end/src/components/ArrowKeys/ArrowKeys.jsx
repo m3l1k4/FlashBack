@@ -38,6 +38,7 @@ class ArrowKeys extends Component {
 
                 <div className="ArrowKeys" ref={el => (this.div = el)}>
 
+
                     <div>
                         <div id="controls">
                             <img id="left" src="../assets/arrows/staticLeft.gif" width="66px" height="66px"></img>

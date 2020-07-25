@@ -5,11 +5,19 @@ import $ from 'jquery';
 var notes = [];
 
 var score =0;
+var pause = 1;
 
+
+$(document).keydown( function(event) {
+
+	if(event.keyCode ==80){
+		alert("paused")
+	}
+});
 
 
 function Arrow(direction) {
-
+console.log("Arrow executing");
 	// CSS spacings for the arrows //
 	var xPos = null;
 
@@ -50,7 +58,7 @@ function Arrow(direction) {
 
 // To enable animating the arrows
 Arrow.prototype.step = function() {
-
+	console.log("Arrow step executing");
 	// Controls the speed of the arrows
 	this.image.css("top", "-=4px");
 
@@ -58,7 +66,7 @@ Arrow.prototype.step = function() {
 
 // Deletes arrows when they get to bottom of page
 Arrow.prototype.destroy = function() {
-
+	console.log("Arrow destro");
 	// removes the image of the DOM
 	this.image.remove();
 
@@ -69,7 +77,7 @@ Arrow.prototype.destroy = function() {
 
 // Explodes arrow when hit
 Arrow.prototype.explode = function() {
-
+	console.log("Arrow explode");
 	this.image.remove();
 
 
@@ -89,7 +97,7 @@ var arrowSpawnRate = 40;
 
 // Random generator for arrows
 function randomGen() {
-
+	console.log("randomgen executing");
 	// Randomizes between 1 and 4
 	randNum = Math.floor(Math.random() * 4) + 1;
 
@@ -119,9 +127,12 @@ function randomGen() {
 }// ends randomGen()
 
 
+
 // Render function //
 function render() {
+	console.log("render executing");
 
+	if (pause==1){
 	if ((frame=frame+1) % arrowSpawnRate === 0) {
 
 		randomGen();
@@ -142,14 +153,17 @@ function render() {
 
 	}
 
+}
+
 }// ends render()
 
 
 
 // jQuery to animate arrows //
 $(document).ready(function () {
-
+	console.log("ready executing");
 	// shim layer with setTimeout fallback
+	
 	window.requestAnimationFrame = (function() {
 
 		return window.requestAnimationFrame ||
@@ -186,7 +200,7 @@ $(document).ready(function () {
 
 // Listening for when the key is pressed
 $(document).keydown( function(event) {
-	
+	console.log("keydown executing");
 	for (var i = 0; i < notes.length; i++) {
 	
 			console.log(notes[i].image.position().top);
