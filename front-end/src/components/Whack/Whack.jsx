@@ -12,7 +12,16 @@ class Whack extends Component {
         return (
 
 
-<div className="Whack">hello</div>
+            <div className="Whack" id="whack" >hello
+
+                <div id="mole">
+                    <input type="image" src="../assets/duck.png"></input>
+                    <img id="right" src="../assets/duck.png" width="66px" height="66px"></img>
+
+                </div>
+
+            </div>
+
         );
     }
 

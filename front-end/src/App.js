@@ -16,6 +16,8 @@ import SideBar from './components/SideBar'
 
 import SoundCloud from './components/SoundCloud'
 
+import Whack from './components/Whack'
+
 class App extends React.Component {
 
 
@@ -74,6 +76,11 @@ class App extends React.Component {
           <SoundCloud/>
         </Route>
 
+        <Route path="/whack">
+          <Whack />
+       
+        </Route>
+
 
         <Route path="/games">
 
@@ -86,16 +93,9 @@ class App extends React.Component {
 
 
         <Route path="/piano">
-
-    
-
-            
-
             <div className="App__inner" >
               <PianoPlayer />
             </div>
-
-         
         </Route>
 
       </Switch>
