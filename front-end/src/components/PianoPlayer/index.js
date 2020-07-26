@@ -107,7 +107,7 @@ class PianoPlayer extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="h3">react-piano recording + playback demo</h1>
+    
         <div className="mt-5">
           <SoundfontProvider
             instrumentName="acoustic_grand_piano"
@@ -118,7 +118,7 @@ class PianoPlayer extends React.Component {
                 recording={this.state.recording}
                 setRecording={this.setRecording}
                 noteRange={noteRange}
-                width={500}
+                width={700}
                 playNote={playNote}
                 stopNote={stopNote}
                 disabled={isLoading}
@@ -133,8 +133,8 @@ class PianoPlayer extends React.Component {
           <button className="mt-5--controls__button" onClick={this.onClickClear}>CLEAR</button>
         </div>
         <div className="mt-5">
-          <strong>Recorded notes</strong>
-          <div>{JSON.stringify(this.state.recording.events)}</div>
+          {/* <strong>Recorded notes</strong> */}
+          {/* <div>{JSON.stringify(this.state.recording.events)}</div> */}
         </div>
       </div>
     );
