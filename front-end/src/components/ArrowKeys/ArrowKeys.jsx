@@ -46,18 +46,25 @@ class ArrowKeys extends Component {
                             <img id="down" src="../assets/arrows/staticDown.gif" width="66px" height="66px"></img>
                             <img id="right" src="../assets/arrows/staticRight.gif" width="66px" height="66px"></img>
                         </div>
-                        <div className="stage"></div>
+                        <div className="stage" id="stage">
+                        <h3 className="pauseMsg" >Click on disco and press any key</h3>
+                        </div>
                     </div>
-                    <div div className="score">
 
+
+                    
+
+                    <div className="score" id="score">
+                   
                         <h1 className="score--text">Score</h1>
-                        {/* <h1 className="score--text">C</h1>
-                        <h1 className="score--text">O</h1>
-                        <h1 className="score--text">R</h1>
-                        <h1 className="score--text">E</h1> */}
                         <div className="board"></div>
-               
+                        <div class="instruc"><h1 class="instruc--text">Instructions</h1>
+  <span class="instructext">Press P for Pause. To listen to music, pause game, start the DJ, then resume! Have fun!</span>
+</div>
                     </div>
+
+
+                   
 
                     {/* <div className="soundCloud">
    
