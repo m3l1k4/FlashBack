@@ -16,17 +16,34 @@ import $ from 'jquery';
 // var quack = new Audio("./assets/quack.mp3")
 
 var score = 0;
+var size = 300;
 
-setInterval(startWhack, 995)
+setInterval(startWhack, 1000)
 
 $(document).ready(function () {
 	$("#mole").click(function (event) {
 		event.preventDefault();
 		score = score + 1;
-		$(".score").text(score);
-	
+		size = size - 10;
+		$(".Whack__score-board--value").text(score);
+		$(".mole-img").css({ width: size })
+
 	});
+
+
+
+	$('#Whack__restart').click(function (event) {
+		event.preventDefault();
+		score = 0;
+		size=300;
+		$(".Whack__score-board--value").text(score);
+		$(".mole-img").css({ width: size })
+	}
+	);
+
 });
+
+
 
 
 function startWhack() {
@@ -49,10 +66,10 @@ function whackedMole(x, y) {
 
 	let randX = xString.concat(x, 'px');
 	let randY = yString.concat(y, 'px');
-	// document.getElementById("mole").style.top = randY;
-	$("#mole").css({top: randY, left: randX, position:'absolute'})
-	// $('#mole').style.top (randY);
-	// document.getElementById("mole").style.left = randX;
+
+	$("#mole").css({ top: randY, left: randX, position: 'absolute' })
+
+
 
 	return "potato";
 }

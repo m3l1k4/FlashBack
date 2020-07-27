@@ -28,12 +28,24 @@ class Whack extends Component {
     return (
       <div className="Whack" ref={el => (this.div = el)}>
         {/* <div className="Whack" >  */}
-        <h1>Your score is</h1>
-        <h1 className="score">0</h1>
-        <div id="mole">
-          <input type="image" src="./assets/duck.png" width="66px"></input>
+
+        <div className="Whack--menu">
+          <div className="Whack__score-board">
+            <h1 className="Whack__score-board--text">Score</h1>
+            <h1 className="Whack__score-board--value">0</h1>
+          </div>
+          <div id="Whack__restart" className="Whack__restart" >
+            <input className="Whack__restart" type="image" src="../assets/reset.png" width="66px"></input>
+          </div>
         </div>
-      
+
+        <div className="Whack__mole">
+        <div id="mole">
+          <input type="image" className="mole-img" src="https://media.giphy.com/media/2zdnjezC5JzvG69G8U/giphy.gif" ></input>
+        </div>
+        </div>
+       
+
 
       </div>
     )

@@ -1,11 +1,60 @@
 .score {
-  color: black;
+  color: white;
+}
+
+#restart {
+  color: white;
+  cursor: pointer;
 }
 
 .Whack {
-  background-color: yellow;
+  margin-left: 2rem;
   width: 100%;
-  height: 900px;
+  height: 600px;
   position: relative;
+}
+
+.Whack__mole {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+
+.Whack--menu {
+  margin: 5rem 0 1rem 5rem;
+}
+
+.Whack__restart {
+  width: 200px;
+}
+
+.Whack__score-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 16px;
+  color: palevioletred;
+  border: 5px solid palevioletred;
+  width: 190px;
+  border-radius: 4px;
+}
+
+.Whack__score-board--text {
+  font-family: 'Phosphate';
+}
+
+.Whack__score-board--value {
+  font-weight: bold;
+}
+
+.mole {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
 /*# sourceMappingURL=Whack.css.map */
