@@ -2,12 +2,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: inherit;
-  min-height: 850px;
-  background-image: url("./chrome-wave.gif");
-  background-size: cover;
-  background-position: center;
 }
 
 .HomeMenu__sidebar {
@@ -23,11 +22,13 @@
 }
 
 .HomeMenu__maindiv {
-  width: 100%;
+  width: 70%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -39,7 +40,7 @@
 .HomeMenu__maindiv--icon {
   width: 20vw;
   height: 20vw;
-  margin: 1vw;
+  margin-left: 1vw;
   -webkit-animation: flash 2s linear infinite;
           animation: flash 2s linear infinite;
   -webkit-transition: -webkit-transform .2s;
@@ -61,6 +62,11 @@
 .iconB {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
+}
+
+.iconC {
+  position: relative;
+  top: -30px;
 }
 
 @-webkit-keyframes flash {

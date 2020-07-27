@@ -1,5 +1,5 @@
 
-//https://www.npmjs.com/package/react-piano
+//Library from https://www.npmjs.com/package/react-piano
 
 import React from 'react';
 import ReactDOM from 'react-dom';

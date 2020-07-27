@@ -1,14 +1,9 @@
 .HomeMenu {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: inherit;
-
-    min-height: 850px;
-
-    background-image: url("./chrome-wave.gif");
-    background-size: cover;
-    background-position: center;
-
+ 
     &__sidebar {
         width: 20vw;
         min-height: 600px;
@@ -23,9 +18,10 @@
 
     &__maindiv {
         
-        width: 100%;
+        width: 70%;
         height: auto;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
 
         justify-content: center;
@@ -34,7 +30,7 @@
         //    cursor: pointer;
             width: 20vw;
             height: 20vw;
-            margin: 1vw;
+            margin-left: 1vw;
             animation: flash 2s linear infinite; 
             transition: transform .2s;
 
@@ -54,6 +50,11 @@
 }
 .iconB{
     transform: rotate(-20deg);
+}
+
+.iconC{
+    position: relative;
+    top: -30px;
 }
 
 @keyframes flash {

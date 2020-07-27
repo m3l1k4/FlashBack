@@ -4,7 +4,8 @@ import ArrowKeysReact from 'arrow-keys-react';
 import ArrowKeys from './components/ArrowKeys'
 import jsRev from './components/jQuery/jsRev';
 import ducky from './components/jQuery/ducky';
-// import Score from './components/Score'
+// import slider from './components/jQuery/slider';
+
 
 import './App.css';
 
@@ -19,8 +20,6 @@ import SoundCloud from './components/SoundCloud'
 
 import Whack from './components/Whack'
 
-
-import Test from './components/Test'
 
 class App extends React.Component {
 
@@ -86,10 +85,7 @@ class App extends React.Component {
         </Route>
 
 
-        <Route path="/test">
-          <Test />
-       
-        </Route>
+    
 
         <Route path="/games">
 

@@ -14,6 +14,7 @@ export default function SideBar() {
 
                     <a href="/about"><img className="SideBar--options__icon" src="../assets/icons/ABOUT.svg" ></img></a>
                     <a href="/games"> <img className="SideBar--options__icon" src="../assets/icons/GAMES.svg" ></img></a>
+                    <a href="/news"> <img className="SideBar--options__icon" src="../assets/icons/NEWS.svg" ></img></a>
                 </div>
           
     </div>

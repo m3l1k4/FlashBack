@@ -1,5 +1,5 @@
-//library from https://github.com/derekahn/jsRevolution
-// changes have been made to the original code to fit react framework
+//Skeleton library from https://github.com/derekahn/jsRevolution
+
 import $ from 'jquery';
 // 'notes' to store Arrows  
 var notes = [];

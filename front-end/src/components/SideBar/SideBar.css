@@ -18,6 +18,15 @@
 }
 
 .SideBar--options {
+  display: none;
+}
+
+.SideBar--options__icon {
+  margin: 1rem;
+  width: 100px;
+}
+
+.SideBar:hover .SideBar--options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,10 +40,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.SideBar--options__icon {
-  margin: 1rem;
 }
 
 @-webkit-keyframes text-flicker {

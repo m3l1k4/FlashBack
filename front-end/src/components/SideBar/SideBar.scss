@@ -11,17 +11,20 @@
     }
 
     &--options {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      
+      display: none;
 
         &__icon {
             margin: 1rem;
+            width: 100px;
         }
     }
 }
 
+.SideBar:hover .SideBar--options{   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
 
 @keyframes text-flicker {
     0% {

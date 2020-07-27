@@ -16,15 +16,20 @@ import $ from 'jquery';
 // var quack = new Audio("./assets/quack.mp3")
 
 var score = 0;
-var size = 300;
+var size = 100;
+let intrv=1000;
+var restart=0;
+setInterval(startWhack, intrv)
+whackedMole(100,100);
 
-setInterval(startWhack, 1000)
+// setInterval(startWhack, intrv)
 
 $(document).ready(function () {
 	$("#mole").click(function (event) {
 		event.preventDefault();
 		score = score + 1;
-		size = size - 10;
+		size = size - 2;
+		restart=0;
 		$(".Whack__score-board--value").text(score);
 		$(".mole-img").css({ width: size })
 
@@ -35,9 +40,12 @@ $(document).ready(function () {
 	$('#Whack__restart').click(function (event) {
 		event.preventDefault();
 		score = 0;
-		size=300;
+		size=100;
+		restart=1;
 		$(".Whack__score-board--value").text(score);
 		$(".mole-img").css({ width: size })
+		
+	
 	}
 	);
 
@@ -45,15 +53,23 @@ $(document).ready(function () {
 
 
 
-
 function startWhack() {
 
-	let xCordf = getRandomX(20, 700);
-	let xCord = float2int(xCordf);
-	let yCordf = getRandomY(10, 500);
-	let yCord = float2int(yCordf);
-	let diditWork = whackedMole(xCord, yCord);
 
+	if (restart==1){
+		whackedMole(100, 100);
+	}
+
+	else{
+		let xCordf = getRandomX(20, 400);
+		let xCord = float2int(xCordf);
+		let yCordf = getRandomY(20, 400);
+		let yCord = float2int(yCordf);
+		whackedMole(xCord, yCord);
+	
+	}
+
+	
 
 	return
 
