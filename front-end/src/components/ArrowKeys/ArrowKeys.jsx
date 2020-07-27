@@ -9,9 +9,15 @@ class ArrowKeys extends Component {
     componentDidMount() {
 
 
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js";
+        this.div.appendChild(script);
+
+
         const script2 = document.createElement("script");
         script2.async = true;
-        script2.src = './jsRev.js';
+        script2.src = '../jQuery/jsRev.js';
         this.div.appendChild(script2);
 
 
