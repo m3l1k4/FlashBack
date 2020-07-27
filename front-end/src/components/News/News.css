@@ -1,0 +1,28 @@
+.News {
+  display: block;
+}
+
+.News--logo {
+  width: 40vw;
+}
+
+.News--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 700px;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.News--body__text {
+  font-weight: 100;
+  color: #257d9b;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  letter-spacing: .15em;
+}
+/*# sourceMappingURL=News.css.map */

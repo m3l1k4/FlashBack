@@ -1,0 +1,29 @@
+.News{
+display: block;
+
+
+    &--logo{
+        width: 40vw;
+    }
+    &--body{
+        display: flex;
+       width: auto;
+       height: 700px;
+       height: auto;
+       flex-wrap: wrap;
+
+        &__text{
+        font-weight: 100;
+        color: rgb(37, 125, 155);
+        font-size: 16px; 
+        font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+        letter-spacing: .15em;
+
+
+        }
+
+     
+    }
+}
+

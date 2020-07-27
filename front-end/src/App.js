@@ -18,6 +18,7 @@ import Whack from './components/Whack'
 
 
 import About from './components/About'
+import News from './components/News'
 
 
 class App extends React.Component {
@@ -72,6 +73,11 @@ class App extends React.Component {
         
       <Route path="/about">
           <About />
+       
+        </Route>
+
+        <Route path="/news">
+          <News />
        
         </Route>
 
