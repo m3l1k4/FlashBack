@@ -43,8 +43,9 @@ class ArrowKeys extends Component {
                             <img id="right" src="../assets/arrows/staticRight.gif" width="66px" height="66px"></img>
                         </div>
                         <div className="stage" id="stage">
-                        <h3 className="pauseMsg" >Click on disco and press any key</h3>
+                       
                         </div>
+                        <h3 className="pauseMsg" >Click on disco and press any key</h3>
                     </div>
 
 
@@ -55,7 +56,9 @@ class ArrowKeys extends Component {
                         <h1 className="score--text">Score</h1>
                         <div className="board"></div>
                         <div class="instruc"><h1 class="instruc--text">Instructions</h1>
-  <span class="instructext">Press P for Pause. To listen to music, pause game, start the DJ, then resume! Have fun!</span>
+  <span class="instructext">Press P for Pause. <br/>
+  To listen to music, pause game, start the DJ, then resume!  <br/>
+   Have fun!</span>
 </div>
                     </div>
                 </div>

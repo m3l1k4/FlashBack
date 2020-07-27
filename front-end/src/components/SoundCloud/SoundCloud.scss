@@ -1,7 +1,8 @@
 .SoundCloud{
 
-	max-height: 510px;
-	max-width: 430px;
+	max-height: 300px;
+	max-width: 330px;
+
 	
 	// &__img{
 	// 	position: relative; ;
@@ -9,7 +10,12 @@
 
 	&__iframe{
 		position: relative;
-		top: 450px;
-		left: 110px;
+	bottom: 150px;
+		left: 117px;
+	}
+
+
+	&__img{
+		height: 400px;
 	}
 }

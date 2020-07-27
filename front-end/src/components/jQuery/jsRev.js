@@ -29,16 +29,16 @@ function Arrow(direction) {
 
 	switch (direction) {
 
-		case "left": xPos = "110px";
+		case "left": xPos = "10px";
 			break;
 
-		case "up": xPos = "180px";
+		case "up": xPos = "80px";
 			break;
 
-		case "down": xPos = "245px";
+		case "down": xPos = "145px";
 			break;
 
-		case "right": xPos = "315px";
+		case "right": xPos = "215px";
 			break;
 
 	}
@@ -151,7 +151,7 @@ function render() {
 			notes[i].step();
 
 			// Check for cleanup
-			if (notes[i].image.position().top < 20) {
+			if (notes[i].image.position().top < 10) {
 
 				notes[i].destroy();
 
@@ -226,12 +226,7 @@ $(document).keydown(function (event) {
 
 			if (notes[i].image.position().top > 1 && notes[i].image.position().top < 120) {
 
-				
-
 				score++;
-		
-
-				alert("gotit")
 
 			}
 
@@ -239,24 +234,15 @@ $(document).keydown(function (event) {
 		if (event.keyCode == 40 && notes[i].direction == "down") {
 
 			event.preventDefault();
-			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 120) {
-
-				
+			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 120) {	
 				score++;
-		
 			}
-
-
-
 
 		}
 		if (event.keyCode == 39 && notes[i].direction == "right") {
 
 			if (notes[i].image.position().top > 3 && notes[i].image.position().top < 120) {
-
-		
 				score++;
-		
 			}
 
 
