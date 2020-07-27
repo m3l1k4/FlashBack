@@ -2,8 +2,9 @@ import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import ArrowKeysReact from 'arrow-keys-react';
 import ArrowKeys from './components/ArrowKeys'
-import jsRev from './components/ArrowKeys/jsRev'
-import Score from './components/Score'
+import jsRev from './components/jQuery/jsRev';
+import ducky from './components/jQuery/ducky';
+// import Score from './components/Score'
 
 import './App.css';
 
@@ -17,6 +18,9 @@ import SideBar from './components/SideBar'
 import SoundCloud from './components/SoundCloud'
 
 import Whack from './components/Whack'
+
+
+import Test from './components/Test'
 
 class App extends React.Component {
 
@@ -81,6 +85,11 @@ class App extends React.Component {
        
         </Route>
 
+
+        <Route path="/test">
+          <Test />
+       
+        </Route>
 
         <Route path="/games">
 
