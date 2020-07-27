@@ -34,14 +34,30 @@ class Whack extends Component {
             <h1 className="Whack__score-board--text">Score</h1>
             <h1 className="Whack__score-board--value">0</h1>
           </div>
+
           <div id="Whack__restart" className="Whack__restart" >
-            <input className="Whack__restart" type="image" src="../assets/reset.png" width="66px"></input>
+            <input className="Whack__restart" type="image" src="../assets/reset.png" width="66px" ></input>
           </div>
+
+
+        <div className="Whack__instructions">
+<h1 className="Whack__instructions--opt" >INSTRUCTIONS</h1>
+          <h1 className="Whack__instructions--text">
+            Thats not a Duck! <br/>
+            Click him to start.  <br/>
+            Catch him if you can! <br/>
+            Hint: turn on sound : )
+        
+          </h1>
+
+</div>
         </div>
+
+       
 
         <div className="Whack__mole">
         <div id="mole">
-          <input type="image" className="mole-img" src="https://media.giphy.com/media/2zdnjezC5JzvG69G8U/giphy.gif" ></input>
+          <input type="image" className="mole-img" src="https://media.giphy.com/media/2zdnjezC5JzvG69G8U/giphy.gif" width="100px" ></input>
         </div>
         </div>
        
