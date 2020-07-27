@@ -10,7 +10,7 @@
 
 .GamesPage__main {
   width: 100%;
-  height: auto;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,16 +29,19 @@
 .GamesPage__main--sign__one {
   -webkit-animation: text-flicker 10s  infinite;
           animation: text-flicker 10s  infinite;
+  width: 35vw;
 }
 
 .GamesPage__main--sign__two {
   -webkit-animation: text-flicker 6s linear infinite;
           animation: text-flicker 6s linear infinite;
+  width: 35vw;
 }
 
 .GamesPage__main--sign__three {
   -webkit-animation: letter-flicker 4s linear infinite;
           animation: letter-flicker 4s linear infinite;
+  width: 35vw;
 }
 
 @-webkit-keyframes text-flicker {

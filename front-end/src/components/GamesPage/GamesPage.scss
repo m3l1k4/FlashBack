@@ -11,7 +11,7 @@
 
     &__main {
         width: 100%;
-        height: auto;
+        height: 500px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -19,14 +19,18 @@
        
 
         &--sign {
+           
             &__one {
                 animation: text-flicker 10s  infinite;
+            width: 35vw;
             }
             &__two {
                 animation: text-flicker 6s linear infinite;
+                width: 35vw;
             }
             &__three {
                 animation: letter-flicker 4s linear infinite;
+                width: 35vw;
             }
         }
     }
