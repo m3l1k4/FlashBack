@@ -1,7 +1,7 @@
 
 
 import $ from 'jquery';
-
+var quack = new Audio("./assets/quack.mp3")
 
 // $(document).ready(function () {
 // 	$("#mole").click(function () {
@@ -32,7 +32,7 @@ $(document).ready(function () {
 		restart=0;
 		$(".Whack__score-board--value").text(score);
 		$(".mole-img").css({ width: size })
-
+		quack.play();
 	});
 
 
