@@ -11,14 +11,13 @@ import './App.css';
 
 import HomeMenu from './components/HomeMenu'
 import GamesPage from './components/GamesPage'
-
 import PianoPlayer from './components/PianoPlayer'
-
 import SideBar from './components/SideBar'
-
 import SoundCloud from './components/SoundCloud'
-
 import Whack from './components/Whack'
+
+
+import About from './components/About'
 
 
 class App extends React.Component {
@@ -71,6 +70,12 @@ class App extends React.Component {
       <Switch>
 
         
+      <Route path="/about">
+          <About />
+       
+        </Route>
+
+
         <Route exact path="/">
           <HomeMenu />
         </Route>
