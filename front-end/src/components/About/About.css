@@ -34,6 +34,25 @@
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
+}
+
+.About--options__button {
+  cursor: pointer;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
+  border: 3px solid #274d9e;
+  width: 30vw;
+  margin-top: 1rem;
+  outline: none;
+}
+
+.About--options__button:active {
+  border: 3px solid #f5c426;
+  outline: none;
 }
 /*# sourceMappingURL=About.css.map */
