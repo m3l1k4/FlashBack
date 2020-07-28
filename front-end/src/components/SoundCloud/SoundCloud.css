@@ -1,0 +1,15 @@
+.SoundCloud {
+  max-height: 300px;
+  max-width: 330px;
+}
+
+.SoundCloud__iframe {
+  position: relative;
+  bottom: 150px;
+  left: 117px;
+}
+
+.SoundCloud__img {
+  height: 400px;
+}
+/*# sourceMappingURL=SoundCloud.css.map */

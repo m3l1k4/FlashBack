@@ -1,0 +1,131 @@
+.HomeMenu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+ 
+    &__sidebar {
+        width: 20vw;
+        min-height: 600px;
+
+        &--logo {
+            width: 20vw;
+            margin: 2rem;
+
+            animation: text-flicker 3s linear infinite;
+        }
+    }
+
+    &__maindiv {
+        
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        justify-content: center;
+        &--icon {
+      
+        //    cursor: pointer;
+            width: 20vw;
+            height: 20vw;
+            margin-left: 1vw;
+            animation: flash 2s linear infinite; 
+            transition: transform .2s;
+
+        }
+
+
+        &--icon:hover{
+        
+               
+                transform: scale(1.25); 
+        }
+    }
+}
+
+.iconA{
+    transform: rotate(20deg);
+}
+.iconB{
+    transform: rotate(-20deg);
+}
+
+.iconC{
+    position: relative;
+    top: -30px;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+    2% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    8% {
+        opacity: 0.1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    9% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    12% {
+        opacity: 0.1;
+        text-shadow: 0px 0px rgba(242, 22, 22, 1);
+    }
+    20% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    25% {
+        opacity: 0.3;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    30% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+    70% {
+        opacity: 0.7;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+    72% {
+        opacity: 0.2;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+    77% {
+        opacity: 0.9;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    100% {
+        opacity: 0.9;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+}
+
+
+@keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}

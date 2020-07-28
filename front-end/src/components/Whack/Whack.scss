@@ -1,0 +1,98 @@
+.score {
+    color: white;
+}
+
+#restart {
+    color: white;
+    cursor: pointer;
+}
+
+.Whack {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 600px;
+display: flex;
+    position: relative;
+
+
+  &__instructions{
+
+    color:  palevioletred;
+    border: 5px solid palevioletred;
+    width: 190px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    &--opt{
+ 
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Phosphate';
+       
+    }
+    cursor: pointer;
+
+    &--text{
+        display: none;
+
+        font-size: 14px;
+    }
+
+
+  }
+
+    &__mole{
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-top: 5rem;
+
+    }
+
+
+    &--menu{
+        margin: 5rem 0 1rem 5rem;
+    }
+    &__restart {
+        width: 200px;
+    }
+    &__score-board {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 16px;
+        color:  palevioletred;
+        border: 5px solid palevioletred;
+        width: 190px;
+        border-radius: 4px;
+
+
+        &--text{
+
+         
+            font-family: 'Phosphate';
+        }
+
+        &--value{
+font-weight: bold;
+        }
+    }
+}
+
+.mole {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.Whack__instructions:hover .Whack__instructions--text{
+    display: block;
+}
+
+
+

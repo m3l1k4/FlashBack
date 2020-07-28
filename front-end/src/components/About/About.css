@@ -1,0 +1,58 @@
+.About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.About--logo {
+  width: 40vw;
+}
+
+.About--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.About--body__text {
+  font-weight: 100;
+  color: #257d9b;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  letter-spacing: 0.15em;
+}
+
+.About--options__button {
+  cursor: pointer;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
+  border: 3px solid #274d9e;
+  width: 30vw;
+  margin-top: 1rem;
+  outline: none;
+}
+
+.About--options__button:active {
+  border: 3px solid #f5c426;
+  outline: none;
+}
+/*# sourceMappingURL=About.css.map */

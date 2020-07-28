@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="146px" viewBox="0 0 164 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Polygon" stroke-opacity="0.832468313" stroke="#6593D4" stroke-width="4" fill="#000000" fill-rule="nonzero" points="81.9231037 3 160.846208 56.6523895 130.756102 143.302984 33.0901054 143.302984 3 56.6523895"></polygon>
+        <text id="NEWS" fill-opacity="0.757949082" fill="#547BB0" fill-rule="nonzero" font-family="MarkerFelt-Wide, Marker Felt" font-size="30" font-weight="bold">
+            <tspan x="43" y="93">NEWS</tspan>
+        </text>
+        <g id="ABOUT" transform="translate(43.000000, 66.000000)"></g>
+    </g>
+</svg>
