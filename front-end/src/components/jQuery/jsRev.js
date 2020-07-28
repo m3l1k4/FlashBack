@@ -1,4 +1,4 @@
-//Library from https://github.com/derekahn/jsRevolution
+//Algorithm from https://github.com/derekahn/jsRevolution
 //Multiple functionality changes have been made to the original script
 
 import $ from 'jquery';
