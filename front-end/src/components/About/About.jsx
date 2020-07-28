@@ -22,7 +22,12 @@ export default function About() {
 
 
             <div className="About--options">
+           
+                    <a href="/requests"><button type="submit" className="About--options__button"
+                        id="upload-submit-button">REQUEST A GAME</button></a>
 
+
+            
 
             </div>
 
