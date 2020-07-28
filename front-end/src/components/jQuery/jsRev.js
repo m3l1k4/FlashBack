@@ -1,9 +1,9 @@
-//Skeleton library from https://github.com/derekahn/jsRevolution
+//Library from https://github.com/derekahn/jsRevolution
+//Multiple functionality changes have been made to the original script
 
 import $ from 'jquery';
-// 'notes' to store Arrows  
+ 
 var notes = [];
-
 var score = 0;
 var pause = 0;
 
@@ -17,7 +17,6 @@ $(document).keydown(function (event) {
 		pause = 1;
 		$('.pauseMsg').text("");
 	}
-
 
 });
 
@@ -121,8 +120,6 @@ function randomGen() {
 
 		notes.push(new Arrow("up"));
 
-
-
 	}
 	if (randNum === 4) {
 
@@ -145,8 +142,7 @@ function render() {
 
 		}
 
-		// // Animate arrows showering down //
-		// for (var i = 0; i < notes.length ; i++) {
+		// // Animate arrows showering up //
 		for (var i = notes.length - 1; i >= 0; i--) {
 			notes[i].step();
 
@@ -162,8 +158,6 @@ function render() {
 	}
 
 }// ends render()
-
-
 
 // jQuery to animate arrows //
 $(document).ready(function () {
@@ -215,10 +209,8 @@ $(document).keydown(function (event) {
 
 			if (notes[i].image.position().top > 1 && notes[i].image.position().top < 120) {
 
-		
 				score++;
-		
-
+	
 			}
 
 		}
