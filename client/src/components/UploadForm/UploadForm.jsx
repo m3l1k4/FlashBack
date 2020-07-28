@@ -9,19 +9,19 @@ export default function UploadForm({ handleUpload }) {
 
     handleUpload = (event) => {
         event.preventDefault();
-        const idnum = String(new Date().getTime());
+        // const idnum = String(new Date().getTime());
 
-        let newUpload = {
-            id: idnum,
-            name: event.target.newuploadtitle.value,
-            game: event.target.newuploaddesc.value,
-            email: event.target.newemail.value,
+        // let newUpload = {
+        //     id: idnum,
+        //     name: event.target.newuploadtitle.value,
+        //     game: event.target.newuploaddesc.value,
+        //     email: event.target.newemail.value,
 
 
-        };
+        // };
 
-        axios
-            .post('/requests', newUpload)
+        // axios
+        //     .post('/requests', newUpload)
 
         event.target.reset();
     };
