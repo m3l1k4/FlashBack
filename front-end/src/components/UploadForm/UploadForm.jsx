@@ -22,8 +22,6 @@ export default function UploadForm({ handleUpload }) {
 
         axios
             .post('/requests', newUpload)
-            .then(console.log("uploaded"));
-
 
         event.target.reset();
     };
