@@ -12,10 +12,22 @@ export default function News() {
 
             <div className="News--body">
                 <h1 className="News--body__text" >
-                    sample text
+                    Slider-Puzzle
                    </h1>
+                <p className="News--body__text--p">
+                    Slider puzzle with randomly generated images, and different levels of difficulty
+                     </p>
             </div>
-        
+
+
+            <div className="News--body">
+                <h1 className="News--body__text" >
+                    Cup-n-Ball
+                   </h1>
+                <p className="News--body__text--p"> 
+              Classic cup and ball game
+                </p>
+            </div>
 
 
 
