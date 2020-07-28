@@ -8,7 +8,7 @@ export default function News() {
 
 
         <div className="News">
-            <a href="/">   <img className="News--logo" src="../assets/banner.png" ></img></a>
+            <a href="/news">   <img className="News--logo" src="../assets/banner.png" ></img></a>
 
             <div className="News--body">
                 <h1 className="News--body__text" >
