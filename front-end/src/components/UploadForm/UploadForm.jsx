@@ -41,10 +41,7 @@ export default function UploadForm({ handleUpload }) {
 
             <form onSubmit={handleUpload} className="upload-request__form" id="submit-upload">
                 <div className="upload-request__form--body" >
-                    {/* <div className="upload-request__form--body__visual">
-                        <p className="upload-request__form--body__visual--title">VIDEO THUMBNAIL </p>
-                        <img src="./assets/logo.png"className="upload-request__form--body__visual--img" alt="request preview"></img> 
-                    </div> */}
+  
                     <div className="upload-request__form--body__field">
                         <p className="upload-request__form--body__field--title">NAME</p>
                         <textarea name="newuploadtitle" placeholder="Add a title to your request" id="upload-content-title" className="upload-request__form--body__field--upload-title"

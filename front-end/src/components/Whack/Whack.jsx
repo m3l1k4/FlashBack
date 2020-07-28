@@ -27,7 +27,6 @@ class Whack extends Component {
   render() {
     return (
       <div className="Whack" ref={el => (this.div = el)}>
-        {/* <div className="Whack" >  */}
 
         <div className="Whack--menu">
           <div className="Whack__score-board">
