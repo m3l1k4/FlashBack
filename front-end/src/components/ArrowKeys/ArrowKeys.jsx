@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import './ArrowKeys.scss'
 
-// import '../SoundCloud/SoundCloud.js'
-
 class ArrowKeys extends Component {
 
 
@@ -43,23 +41,23 @@ class ArrowKeys extends Component {
                             <img id="right" src="../assets/arrows/staticRight.gif" width="66px" height="66px"></img>
                         </div>
                         <div className="stage" id="stage">
-                       
+
                         </div>
                         <h3 className="pauseMsg" >Click on disco and press any key</h3>
                     </div>
 
 
-                    
+
 
                     <div className="score" id="score">
-                   
+
                         <h1 className="score--text">Score</h1>
                         <div className="board"></div>
                         <div class="instruc"><h1 class="instruc--text">Instructions</h1>
-  <span class="instructext">Press P for Pause. <br/>
-  To listen to music, pause game, start the DJ, then resume!  <br/>
-   Have fun!</span>
-</div>
+                            <span class="instructext">Press P for Pause. <br />
+                            To listen to music, pause game, start the DJ, then resume!  <br />
+                            Have fun!</span>
+                        </div>
                     </div>
                 </div>
             </div>
