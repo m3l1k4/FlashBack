@@ -21,6 +21,8 @@ import About from './components/About'
 import News from './components/News'
 
 
+import UploadForm from './components/UploadForm'
+
 class App extends React.Component {
 
 
@@ -96,6 +98,10 @@ class App extends React.Component {
         </Route>
 
 
+        <Route path="/requests">
+          <UploadForm />
+       
+        </Route>
     
 
         <Route path="/games">
