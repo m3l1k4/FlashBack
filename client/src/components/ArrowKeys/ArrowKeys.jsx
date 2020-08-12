@@ -55,6 +55,7 @@ class ArrowKeys extends Component {
                         <div className="board"></div>
                         <div class="instruc"><h1 class="instruc--text">Instructions</h1>
                             <span class="instructext">Press P for Pause. <br />
+                            Use arrow or WASD keys to play <br/>
                             To listen to music, pause game, start the DJ, then resume!  <br />
                             Have fun!</span>
                         </div>
