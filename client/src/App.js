@@ -16,7 +16,7 @@ import SideBar from './components/SideBar'
 import SoundCloud from './components/SoundCloud'
 import Whack from './components/Whack'
 
-
+import Cup from './components/Cup'
 import About from './components/About'
 import News from './components/News'
 
@@ -94,6 +94,11 @@ class App extends React.Component {
 
         <Route path="/whack">
           <Whack />
+       
+        </Route>
+
+        <Route path="/cup">
+          <Cup />
        
         </Route>
 
